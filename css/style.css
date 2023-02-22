@@ -96,9 +96,9 @@
 .carre {
     width: 20px;
     height: 20px;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 150px;
-    margin: 100px 50px;
+    margin: 50px 50px;
 }
 
 .carre-1 {
@@ -108,9 +108,9 @@
 }
 
 .carre-2 {
-    background-image: url(../img/telescope.jpg);
+    background-image: url(../img/space.jpg);
     background-position: center;
-    background-size: 80%;
+    background-size: 90%;
 }
 
 .carre-3 {
@@ -120,9 +120,21 @@
 }
 
 .carre-4 {
-    background-image: url(../img/rock.jpg);
+    background-image: url(../img/mixtape.jpg);
     background-position: center;
     background-size: 100%;
+}
+
+.carre-5 {
+    background-image: url(../img/moovie.jpg);
+    background-position: center;
+    background-size: 135%;
+}
+
+.carre-6 {
+    background-image: url(../img/gameboy.jpg);
+    background-position: center;
+    background-size: 135%;
 }
 
 
