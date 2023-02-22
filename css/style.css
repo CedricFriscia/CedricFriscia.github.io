@@ -1,102 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
-    scroll-behavior: smooth;
-}
 
-:root{
-    --bg-color: #2a2a2a;
-    --second-bg-color: #202020;
-    --text-color: #fff;
-    --second-color: #ccc;
-    --main-color: #ff4d05;
-    --big-font: 5rem;
-    --h2-font: 3rem;
-    --p-font: 1.1rem;
-}
-
-body  {
-    background: var(--bg-color);
-    color: var(--text-color);
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+.container {
     display: flex;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 4px solid black;
+}
+
+.left-screen {
+    width: 50%;
+    height: 100vh;
+    border-right: 4px solid black;
+    z-index: 1000;
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 22px 15%;
-    border-bottom: 1px solid transparent;
-    transition: all .45s ease;
 }
 
-.logo {
-    color: var(--text-color);
-    font-size: 35px;
-    font-weight: 700;    
-    letter-spacing: 1px;
+.right-screen {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    background-image: url(../img/headphones-gc4249b19a_1920.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-span {
-    color: var(--main-color)
+@-webkit-keyframes sizer {
+    from {font-size: 50px;}
+    to {font-size: 250px;}
+  }
+
+.title-who {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar {
-    display: flex;   
-    cursor: pointer;
+.title-who h2{
+    color: #000000;
+   animation-name: sizer;
+   animation-duration: 1.25s;
+   font-size: 250px;
 }
 
-
-.navbar a {
-    color: var(--second-color);
-    font-size: 17px;
-    font-weight: 500;
-    margin: 0 15px;
-    transition: all .45s ease;
-    cursor: pointer;
+.title-i h2{
+    color: #FF9F1C;
+   animation-name: sizer;
+   animation-duration: 1.25s;
+   font-size: 250px;
 }
 
-.navbar li:hover {
-    color: var(--main-color);
+.title-am h2{
+    color: #011627;
+   animation-name: sizer;
+   animation-duration: 1.25s;
+   font-size: 250px;
 }
 
-.navbar li.active {
-    color: var(--main-color);
-}
-
-#menu-icon {
-    font-size: 35px;
-    color: var(--main-color);
-    z-index: 10001;
-    cursor: pointer;
-    margin-left: 25px;
+.hidden {
     display: none;
 }
 
-section {
-    padding: 160px 15% 120px;
+.separation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #e0d1b6;
+    border-bottom: 4px solid black;
 }
 
-.home {
-    position: relative;
+.separation h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    border-bottom: 4px solid black;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: fle;
     height: 100vh;
     width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    background-color: #FFFFF2;
 }
 
-.slide {
-    margin-bottom: 35px;
+.portfolio h2 {
+    margin: 30px;
+    font-family: sans-serif;
+   font-size: 45px;
+   font-weight: 700;
 }
+
+.portfolio p {
+    margin: 30px;
+    font-size: 15px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
