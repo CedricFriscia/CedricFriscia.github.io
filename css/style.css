@@ -130,7 +130,7 @@
     height: 20px;
     border: 4px solid #03191E;
     border-radius: 14px;
-    padding: 140px;
+    padding: 130px;
     margin: 50px 50px 10px 50px;
     cursor: pointer;
 }
@@ -201,17 +201,51 @@
 .skills {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     
 }
 
 .skill {
   background:#bfd70e;
-  border-radius:50%;
+  border-radius:30%;
   width:160px;
   height:160px;
-  border:2px solid #679403; 
+  border:4px solid #03191E; 
   margin: 15px;
+  cursor: pointer;
 }
+
+.skill-js {
+    background-image: url(../img/skills/js.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.skill-html {
+    background-image: url(../img/skills/html.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.skill-css {
+    background-image: url(../img/skills/css.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.skill-nodejs {
+    background-image: url(../img/skills/nodejs.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.skill-react {
+    background-image: url(../img/skills/react.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 
 
