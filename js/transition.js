@@ -18,3 +18,5 @@ setTimeout(function() {
 setTimeout(function() {
     titleAm.classList.remove('hidden')
 }, 2400);
+
+

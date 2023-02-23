@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 .container {
     display: flex;
@@ -26,7 +26,7 @@
     height: 100vh;
     position: absolute;
     right: 0px;
-    background-image: url(../img/headphones-gc4249b19a_1920.jpg);
+    background-image: url(../img/passions/headphones-gc4249b19a_1920.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -83,7 +83,38 @@
     border-bottom: 4px solid black;
 }
 
-.passion {
+.separation-2 {
+    background-color: #FF9F1C;
+    color: #FFFFF2;
+   
+}
+
+.separation-2 h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    border-bottom: 4px solid #FFFFF2;
+}
+
+
+.separation-3 {
+    background-color: black;
+    color: #FF9F1C;
+    border-top: 4px solid #FF9F1C;
+    border-bottom: 4px solid #FF9F1C; 
+}
+
+.separation-3 h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    border-bottom: 4px solid #FF9F1C;
+}
+
+.separation-3 h3 {
+    color: #FF9F1C;
+   
+}
+
+.passions {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -91,50 +122,95 @@
     width: 100%;
     background-color: #FFFFF2;
     flex-wrap: wrap;
+    border-bottom: 4px solid black;
 }
 
 .carre {
     width: 20px;
     height: 20px;
-    border: 2px solid black;
-    padding: 150px;
-    margin: 50px 50px;
+    border: 4px solid #03191E;
+    border-radius: 14px;
+    padding: 140px;
+    margin: 50px 50px 10px 50px;
+    cursor: pointer;
 }
 
 .carre-1 {
-    background-image: url(../img/kobe.jpg);
+    background-image: url(../img//passions/kobe.jpg);
     background-position: center;
     background-size: 62%;
 }
 
+
 .carre-2 {
-    background-image: url(../img/space.jpg);
+    background-image: url(../img/passions/space.jpg);
     background-position: center;
     background-size: 90%;
 }
 
 .carre-3 {
-    background-image: url(../img/balise-html.jpg);
+    background-image: url(../img/passions/root.jpg);
     background-position: center;
-    background-size: 80%;
+    background-size: 100%;
 }
 
 .carre-4 {
-    background-image: url(../img/mixtape.jpg);
+    background-image: url(../img/passions/mixtape.jpg);
     background-position: center;
     background-size: 100%;
 }
 
 .carre-5 {
-    background-image: url(../img/moovie.jpg);
+    background-image: url(../img/passions/moovie.jpg);
     background-position: center;
     background-size: 135%;
 }
 
 .carre-6 {
-    background-image: url(../img/gameboy.jpg);
+    background-image: url(../img/passions/gameboy.jpg);
     background-position: center;
     background-size: 135%;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFF2;
+    color: #ccc;
+    padding-bottom: 30px;
+}
+
+.about-me h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+    color: black;
+    padding: 30px;
+}
+
+
+.about-me p {
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    width: 400px;
+    color: black;
+    padding: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.skill {
+  background:#bfd70e;
+  border-radius:50%;
+  width:160px;
+  height:160px;
+  border:2px solid #679403; 
+  margin: 15px;
 }
 
 
