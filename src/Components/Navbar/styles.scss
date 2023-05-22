@@ -1,0 +1,100 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: white;
+
+  &__mobile {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__mobile li {
+    padding: 15px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border: 3px solid black;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  &__desktop ul {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    font-weight: bold;
+    height: 6vh;
+  }
+
+  &__desktop ul li {
+    scroll-behavior: smooth;
+  }
+
+  &__desktop ul li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    scroll-behavior: smooth;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+
+  &__presentation h2 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    width: 30rem;
+    font-weight: 1000;
+    padding-bottom: 15px;
+    line-height: 1.2;
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    max-width: 100vw;
+    &__desktop {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
+      margin: 15px;
+      width: 30px;
+      height: 30px;
+    }
+
+    &__logo {
+      width: 12rem;
+    }
+  }
+}

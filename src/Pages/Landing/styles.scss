@@ -1,0 +1,78 @@
+.landing {
+  height: 100vh;
+  margin-top: 40px;
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+
+  &__presentation h2 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    width: 30rem;
+    font-weight: 1000;
+    padding-bottom: 15px;
+    line-height: 1.2;
+  }
+
+  &__presentation aside {
+    width: 25rem;
+    padding-bottom: 15px;
+  }
+
+  &__contact-linkedin {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  &__contact-github {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &__stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__stack h3 {
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 900px) {
+  .landing {
+    &__presentation h2 {
+      margin: auto;
+      font-size: 2rem;
+      letter-spacing: 5px;
+      width: 90vw;
+      font-weight: 1000;
+      padding-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    &__presentation aside {
+      width: 25rem;
+      width: 90vw;
+      padding-bottom: 15px;
+    }
+
+    &__main {
+      display: flex;
+      margin: 50px;
+      flex-direction: column;
+    }
+
+    &__stack {
+      width: 90vw;
+    }
+  }
+}
