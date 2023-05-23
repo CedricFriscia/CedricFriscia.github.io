@@ -38,9 +38,9 @@ const Navbar = () => {
         </nav>
         <button className="navbar__burger" onClick={handleClick}>
           {isIconClose ? (
-            <img src="/src/assets/img/icons8-close-50.png" alt="Close" />
+            <img src="/icons8-close-50.png" alt="Close" />
           ) : (
-            <img src="/src/assets/img/icons8-menu-50.png" alt="Menu" />
+            <img src="/icons8-menu-50.png" alt="Menu" />
           )}
         </button>
       </header>
