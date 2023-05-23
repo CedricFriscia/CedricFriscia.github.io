@@ -26,7 +26,7 @@ const Landing = () => {
             >
               <img
                 className="landing__contact-linkedin"
-                src="src\assets\img\icons8-linkedin-50.png"
+                src="public\icons8-linkedin-50.png"
                 alt="Linkedin logo"
               />
             </a>
@@ -37,7 +37,7 @@ const Landing = () => {
             >
               <img
                 className="landing__contact-github"
-                src="src\assets\img\icons8-github-50.png"
+                src="public\icons8-github-50.png"
                 alt="Github Logo"
               />
             </a>
@@ -45,10 +45,7 @@ const Landing = () => {
         </section>
 
         <section className="landing__image">
-          <img
-            src="src\assets\img\Team work_Monochromatic.svg"
-            alt="Team Work image"
-          />
+          <img src="public\Team work_Monochromatic.svg" alt="Team Work image" />
         </section>
       </main>
 
