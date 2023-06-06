@@ -31,7 +31,7 @@ const CommentForm = () => {
           <textarea
             required
             placeholder="Enter your message"
-            className="form-input"
+            className="form-input "
             name="message"
             id="message"
           ></textarea>
