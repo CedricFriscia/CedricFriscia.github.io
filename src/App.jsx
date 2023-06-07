@@ -4,11 +4,14 @@ import React from "react";
 import Landing from "./Pages/Landing";
 import About from "./Pages/About";
 import Project from "./Pages/Project";
+
 import Contact from "./Pages/Contact";
+import Navbar from "./Components/Navbar";
 
 const App = () => {
   return (
     <div className="container">
+      <Navbar />
       <Landing />
       <About />
       <Project />
