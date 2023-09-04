@@ -48,6 +48,28 @@ const Project = () => {
             </a>
           </div>
         </div>
+        <div className="card">
+          <div className="image-nissa"></div>
+          <div className="content">
+            <a href="#">
+              <span className="title">Party</span>
+            </a>
+
+            <p className="desc">
+              Un petit site vitrine pour la ville de nice qui rassemble quelque
+              image de lieux a visiter ou encore parle de l'ogcnice.
+            </p>
+
+            <a
+              href="https://nissa-five.vercel.app/"
+              className="action"
+              target="_blank"
+            >
+              Go to the web site
+              <span aria-hidden="true">...</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
