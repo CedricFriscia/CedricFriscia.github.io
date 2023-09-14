@@ -52,7 +52,7 @@ const Project = () => {
           <div className="image-nissa"></div>
           <div className="content">
             <a href="#">
-              <span className="title">Party</span>
+              <span className="title">Mieu Nissa</span>
             </a>
 
             <p className="desc">
@@ -61,7 +61,7 @@ const Project = () => {
             </p>
 
             <a
-              href="https://nissa-five.vercel.app/"
+              href="https://mieu-nissa.vercel.app/"
               className="action"
               target="_blank"
             >
