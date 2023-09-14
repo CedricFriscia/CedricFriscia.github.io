@@ -61,7 +61,7 @@ const Project = () => {
             </p>
 
             <a
-              href="https://mieu-nissa.vercel.app/"
+              href="https://nissa-f3cwjln9p-cedricfriscia.vercel.app"
               className="action"
               target="_blank"
             >
