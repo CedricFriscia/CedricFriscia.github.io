@@ -9,24 +9,6 @@ const Project = () => {
 
       <div className="project__container">
         <div className="card">
-          <div className="image"></div>
-          <div className="content">
-            <a href="#">
-              <span className="title">Netflix Clone Front-End</span>
-            </a>
-
-            <p className="desc">
-              Le projet est de faire un clone netflix avec React et Scss pour le
-              Front et pour le Back-End JWT, API, CRUD
-            </p>
-
-            <a href="#" className="action">
-              Work In Progress
-              <span aria-hidden="true">...</span>
-            </a>
-          </div>
-        </div>
-        <div className="card">
           <div className="image-party"></div>
           <div className="content">
             <a href="#">
@@ -65,9 +47,30 @@ const Project = () => {
               className="action"
               target="_blank"
             >
-              Go to the web site
+              Direction Mieu Nissa
               <span aria-hidden="true">...</span>
             </a>
+          </div>
+          <div className="card">
+            <div className="image"></div>
+            <div className="content">
+              <a href="#">
+                <span className="title">Defi's jeunes</span>
+              </a>
+
+              <p className="desc">
+                J'ai créer un site pour pole emploi pour le projet défi's
+              </p>
+
+              <a
+                href="https://defie-jeune.vercel.app/"
+                className="action"
+                target="_blank"
+              >
+                Direction Defi's jeune
+                <span aria-hidden="true">...</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
