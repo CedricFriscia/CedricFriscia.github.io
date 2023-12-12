@@ -1,77 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./styles.scss";
 
 const Project = () => {
+  const [button, setButton] = useState(false);
+
+  const handleHover = () => {
+    setButton(true);
+  };
+
+  const handleLeave = () => {
+    setButton(false);
+  };
   return (
     <div id="project" className="project">
       <h3 className="project__title">Project</h3>
-
-      <div className="project__container">
-        <div className="card">
-          <div className="image-party"></div>
-          <div className="content">
-            <a href="#">
-              <span className="title">Party</span>
-            </a>
-
-            <p className="desc">
-              Une application qui permet de créer des événements et d'inviter
-              vos proches. Video du projet Apothéose.
-            </p>
-
+      <div className="project__card-container">
+        <div
+          className="project__card defi"
+          onMouseEnter={handleHover}
+          onMouseLeave={handleLeave}
+        >
+          {button ? (
             <a
-              href="https://www.youtube.com/watch?v=5RN9SH2qkLE"
-              className="action"
+              href="https://defie-jeune.vercel.app/"
               target="_blank"
+              className="project__button"
             >
-              Show the video
-              <span aria-hidden="true">...</span>
+              Site Web
             </a>
-          </div>
+          ) : (
+            ""
+          )}
         </div>
-        <div className="card">
-          <div className="image-nissa"></div>
-          <div className="content">
-            <a href="#">
-              <span className="title">Mieu Nissa</span>
-            </a>
-
-            <p className="desc">
-              Un petit site vitrine pour la ville de nice qui rassemble quelque
-              image de lieux a visiter ou encore parle de l'ogcnice.
-            </p>
-
+        <div
+          className="project__card nissa"
+          onMouseEnter={handleHover}
+          onMouseLeave={handleLeave}
+        >
+          {button ? (
             <a
-              href="https://nissa-f3cwjln9p-cedricfriscia.vercel.app"
-              className="action"
+              href="https://mieu-nissa.vercel.app/"
               target="_blank"
+              className="project__button"
             >
-              Direction Mieu Nissa
-              <span aria-hidden="true">...</span>
+              Site Web
             </a>
-          </div>
-          <div className="card">
-            <div className="image"></div>
-            <div className="content">
-              <a href="#">
-                <span className="title">Defi's jeunes</span>
-              </a>
-
-              <p className="desc">
-                J'ai créer un site pour pole emploi pour le projet défi's
-              </p>
-
-              <a
-                href="https://defie-jeune.vercel.app/"
-                className="action"
-                target="_blank"
-              >
-                Direction Defi's jeune
-                <span aria-hidden="true">...</span>
-              </a>
-            </div>
-          </div>
+          ) : (
+            ""
+          )}
+        </div>
+        <div
+          className="project__card party"
+          onMouseEnter={handleHover}
+          onMouseLeave={handleLeave}
+        >
+          {button ? (
+            <a
+              href="https://youtu.be/5RN9SH2qkLE"
+              target="_blank"
+              className="project__button"
+            >
+              Vidéo
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

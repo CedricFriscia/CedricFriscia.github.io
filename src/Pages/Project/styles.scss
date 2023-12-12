@@ -1,14 +1,6 @@
 .project {
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  height: 100vh;
-  width: 80vw;
-  padding-bottom: 100px;
-  margin: auto;
-
   &__title {
-    margin: auto;
+    margin: 30px auto;
     width: fit-content;
     height: fit-content;
     background-color: #cabf9d;
@@ -17,102 +9,51 @@
     padding: 5px;
   }
 
-  &__container {
+  &__card-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1em;
+    margin: 30px;
   }
-}
 
-.card {
-  margin-top: 50px;
-  max-width: 300px;
-  border-radius: 0.5rem;
-  background-color: #fff;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid transparent;
-}
+  &__card {
+    width: 350px;
+    height: 230px;
+    background-color: #cabf9d;
+    border-radius: 14px;
+  }
 
-.content {
-  padding: 1.1rem;
-}
+  &__button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 70%;
+    width: 100px;
+    margin: auto;
+    border-radius: 14px;
+    background-color: rgb(85, 241, 252);
+    cursor: pointer;
+  }
 
-.image {
-  object-fit: cover;
-  width: 100%;
-  height: 150px;
-  background-color: rgb(23, 21, 24);
-  background-image: url("/Defi jeune.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  .defi {
+    background-image: url(public/defijeune.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-.image-party {
-  object-fit: cover;
-  width: 100%;
-  height: 150px;
-  background-color: rgb(23, 21, 24);
-  background-image: url("https://www.francebleu.fr/s3/cruiser-production/2023/04/ea0c723d-d743-4204-9c50-4153e6769d8e/1200x680_sc_gettyimages-451813251.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  .nissa {
+    background-image: url(public/nissa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-.image-nissa {
-  object-fit: cover;
-  width: 100%;
-  height: 150px;
-  background-color: rgb(23, 21, 24);
-  background-image: url("https://media.istockphoto.com/id/1315621558/fr/photo/ville-de-nice-dans-la-fran%C3%A7ais-riviera.jpg?s=612x612&w=0&k=20&c=DJ6sgfuAncFWOdMfxxs1DHKgqtlQ-DQY5i25v9-K6ws=");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.title {
-  color: #111827;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-}
-
-.desc {
-  margin-top: 0.5rem;
-  color: #6b7280;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.content {
-  border: 1px solid black;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-.action {
-  display: inline-flex;
-  margin-top: 1rem;
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  align-items: center;
-  gap: 0.25rem;
-  background-color: #2563eb;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.action span {
-  transition: 0.3s ease;
-}
-
-.action:hover span {
-  transform: translateX(4px);
-}
-
-@media screen and (max-width: 768px) {
-  .project {
-    margin-bottom: 35rem;
+  .party {
+    background-image: url(public/party.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
