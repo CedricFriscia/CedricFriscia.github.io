@@ -1,72 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 import "./styles.scss";
 
 const Project = () => {
-  const [button, setButton] = useState(false);
-
-  const handleHover = () => {
-    setButton(true);
-  };
-
-  const handleLeave = () => {
-    setButton(false);
-  };
   return (
     <div id="project" className="project">
       <h3 className="project__title">Project</h3>
       <div className="project__card-container">
-        <div
-          className="project__card defi"
-          onMouseEnter={handleHover}
-          onMouseLeave={handleLeave}
+        <Link to={"https://defie-jeune.vercel.app/"} target={"_blank"}>
+          <img
+            className="project__card"
+            src="project/Capture d'écran 2024-01-03 091948.png"
+            alt=""
+          />
+        </Link>
+        <Link to={"https://mieu-nissa.vercel.app/"} target={"_blank"}>
+          <img
+            className="project__card"
+            src="project/Capture d'écran 2024-01-02 215758.png"
+            alt=""
+          />
+        </Link>
+        <Link
+          to={
+            "https://www.youtube.com/watch?v=5RN9SH2qkLE&ab_channel=CedricFRISCIA"
+          }
+          target={"_blank"}
         >
-          {button ? (
-            <a
-              href="https://defie-jeune.vercel.app/"
-              target="_blank"
-              className="project__button"
-            >
-              Site Web
-            </a>
-          ) : (
-            ""
-          )}
-        </div>
-        <div
-          className="project__card nissa"
-          onMouseEnter={handleHover}
-          onMouseLeave={handleLeave}
-        >
-          {button ? (
-            <a
-              href="https://mieu-nissa.vercel.app/"
-              target="_blank"
-              className="project__button"
-            >
-              Site Web
-            </a>
-          ) : (
-            ""
-          )}
-        </div>
-        <div
-          className="project__card party"
-          onMouseEnter={handleHover}
-          onMouseLeave={handleLeave}
-        >
-          {button ? (
-            <a
-              href="https://youtu.be/5RN9SH2qkLE"
-              target="_blank"
-              className="project__button"
-            >
-              Vidéo
-            </a>
-          ) : (
-            ""
-          )}
-        </div>
+          <img className="project__card" src="project/party.png" alt="" />
+        </Link>
       </div>
     </div>
   );
